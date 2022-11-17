@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       title: 'Wind Notes',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(),
+        body: Container(
+          child: Center(
+            child: Text('Merhaba Dünya'),
+          ),
+        ),
       ),
     );
   }
