@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1016702319151",
+    "project_id": "windsnotes",
+    "storage_bucket": "windsnotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016702319151:android:374603b83306787b5c24da",
+        "android_client_info": {
+          "package_name": "com.example.wind_notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016702319151-o8ahjkp55k4nij080angaostcus7bbbr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wind_notes",
+            "certificate_hash": "e187ec75be1502a1dff1f1fb0d440d1f7de2b11d"
+          }
+        },
+        {
+          "client_id": "1016702319151-11ndlhcs02ik330bv1702b8j10995qgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIEon0Gv-AcqYOpv5Kqfpmp848ZVf2KTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016702319151-11ndlhcs02ik330bv1702b8j10995qgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
