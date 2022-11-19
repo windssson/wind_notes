@@ -1,4 +1,4 @@
-package com.example.wind_notes
+package io.windssson.wind_note
 
 import io.flutter.embedding.android.FlutterActivity
 
