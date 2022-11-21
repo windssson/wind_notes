@@ -104,11 +104,10 @@ class _GirisYapPageState extends State<GirisYapPage> {
                             var kayitsonuc =
                                 await userkontrol.userLogin(_email, _password);
                             if (kayitsonuc) {
-                              
                               Get.off(() => const Anasayfa());
                             } else {
-                              Get.snackbar('Hata',
-                                  'Üye olurken hata oluştu. Daha sonra tekrar deneyiniz.');
+                              Get.snackbar(
+                                  'Hata', 'Kullanıcı adı yada şifre hatalı');
                             }
                           } else {
                             Get.snackbar(
