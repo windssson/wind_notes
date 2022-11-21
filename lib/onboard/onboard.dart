@@ -17,7 +17,7 @@ class OnBoard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
             child: Obx((() {
               return Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Row(
@@ -46,12 +46,15 @@ class OnBoard extends StatelessWidget {
                           : const SizedBox()
                     ],
                   ),
-                  Expanded(child: Image.asset(onboardC.onboardveri[0])),
+                  Image.asset(
+                    onboardC.onboardveri[0],
+                    width: Get.size.height * 0.4,
+                  ),
                   const SizedBox(
                     height: 15,
                   ),
-                  const LinearProgressIndicator(
-                    value: 0.3,
+                  LinearProgressIndicator(
+                    value: onboardC.sayfa.value * 0.33 + 0.34,
                     minHeight: 5,
                   ),
                   const SizedBox(

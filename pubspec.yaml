@@ -42,6 +42,7 @@ dependencies:
   hive_flutter: ^1.1.0
   supabase_flutter: ^1.1.0
   email_validator: ^2.1.17
+  shared_preferences: ^2.0.15
   
 
 

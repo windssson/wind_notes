@@ -13,7 +13,7 @@ class Anasayfa extends StatefulWidget {
 class _AnasayfaState extends State<Anasayfa> {
   final userC = Get.put(UserController());
   @override
-  void initState(){
+  void initState() {
     super.initState();
     loginControl();
   }
@@ -21,15 +21,30 @@ class _AnasayfaState extends State<Anasayfa> {
   loginControl() async {
     var giris = await userC.loginControl();
     if (!giris) {
-      Get.to(GirisYapPage());
+      Get.to(const GirisYapPage());
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Hoşgeldin Devran'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Anasayfa'),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: (() async {
+              var sonuc = await userC.logout();
+              if (sonuc) {
+                Get.off(() => const GirisYapPage());
+              }
+            }),
+            icon: const Icon(Icons.logout),
+          ),
+        ],
+      ),
+      body: const Center(
+        child: Text('Login Success'),
       ),
     );
   }
